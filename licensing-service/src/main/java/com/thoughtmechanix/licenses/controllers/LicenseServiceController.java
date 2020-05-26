@@ -24,9 +24,10 @@ public class LicenseServiceController {
     private ServiceConfig serviceConfig;
 
     @RequestMapping(value="/",method = RequestMethod.GET)
-    public List<License> getLicenses( @PathVariable("organizationId") String organizationId) {
+    public String getLicenses( @PathVariable("organizationId") String organizationId) {
 
-        return licenseService.getLicensesByOrg(organizationId);
+//        return licenseService.getLicensesByOrg(organizationId);
+        return String.format("This is the put");
     }
 
     @RequestMapping(value="/{licenseId}",method = RequestMethod.GET)

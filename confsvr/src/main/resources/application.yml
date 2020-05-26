@@ -19,7 +19,7 @@ spring:
 #        encrypt.enabled: false
         git:
           uri: https://github.com/sujisub1987zhuyi/springcloud
-          searchPaths: licensingservice
+          searchPaths: /confsvr/licensingservice
           username: sujisub1987zhuyi
           password: Sujisub1987
 
